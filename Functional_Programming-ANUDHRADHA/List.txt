@@ -1,0 +1,141 @@
+Python 3.9.1 (tags/v3.9.1:1e5d33e, Dec  7 2020, 17:08:21) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> my_list=[1,2,3]
+>>> my_list
+[1, 2, 3]
+>>> my_list=['string',23,'judge',100]
+>>> my_list
+['string', 23, 'judge', 100]
+>>> len(my_list)
+4
+>>> my_list[0]
+'string'
+>>> my_list[2]
+'judge'
+>>> my_list[1:]
+[23, 'judge', 100]
+>>> my_list[:2]
+['string', 23]
+>>> my_list+['new']
+['string', 23, 'judge', 100, 'new']
+>>> my_list
+['string', 23, 'judge', 100]
+>>> my_list=my_list+['new']
+>>> my_list
+['string', 23, 'judge', 100, 'new']
+>>> my_list*2
+['string', 23, 'judge', 100, 'new', 'string', 23, 'judge', 100, 'new']
+>>> my_list
+['string', 23, 'judge', 100, 'new']
+>>> list1=[1,2,3]
+>>> list1.append("new append")
+>>> list1
+[1, 2, 3, 'new append']
+>>> list1.pop(0)
+1
+>>> list1
+[2, 3, 'new append']
+>>> list1.pop()
+'new append'
+>>> list1
+[2, 3]
+>>> list1.pop(3)
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    list1.pop(3)
+IndexError: pop index out of range
+>>> mlist=['a','e','b','x','c']
+>>> mlist.sort()
+>>> mlist
+['a', 'b', 'c', 'e', 'x']
+>>> mlist.reverse()
+>>> mlist
+['x', 'e', 'c', 'b', 'a']
+>>> list1=[1,2,3]
+>>> list2=[2,4,5]
+>>> list1.append(list2)
+>>> list1
+[1, 2, 3, [2, 4, 5]]
+>>> matrix=[list1,list2]
+>>> matrix
+[[1, 2, 3, [2, 4, 5]], [2, 4, 5]]
+>>> list1=[1,2,3]
+>>> list2=[2,3,5]
+>>> matrix=[list1,list2]
+>>> matrix
+[[1, 2, 3], [2, 3, 5]]
+>>> matrix[0]
+[1, 2, 3]
+>>> matrix[0]
+[1, 2, 3]
+>>> matrix[0][0]
+1
+>>> matrix[1][2]
+5
+>>> 
+======================================= RESTART: Shell =======================================
+>>> mdict={'key1':'value','key2':'value2'}
+>>> mdict
+{'key1': 'value', 'key2': 'value2'}
+>>>  mdict['key1']
+ 
+SyntaxError: unexpected indent
+>>> mdict['key1']
+'value'
+>>> mdict={'key1':[123],'key2':[456],'key3':["a","b"]}
+>>> mdict
+{'key1': [123], 'key2': [456], 'key3': ['a', 'b']}
+>>> mdict['key3']
+['a', 'b']
+>>> mdict2[0]
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    mdict2[0]
+NameError: name 'mdict2' is not defined
+>>> mdict[0]
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    mdict[0]
+KeyError: 0
+>>> mdict['key1']=mdict['key1']-123
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    mdict['key1']=mdict['key1']-123
+TypeError: unsupported operand type(s) for -: 'list' and 'int'
+>>> mdict['key1']=mdict['key1']-123
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    mdict['key1']=mdict['key1']-123
+TypeError: unsupported operand type(s) for -: 'list' and 'int'
+>>> d={}
+>>> d
+{}
+>>> d['fruit']='mango'
+>>> d
+{'fruit': 'mango'}
+>>> d['vege']='carrot'
+>>> d
+{'fruit': 'mango', 'vege': 'carrot'}
+>>> d.keys
+<built-in method keys of dict object at 0x000002047A6E7540>
+>>> d.keys()
+dict_keys(['fruit', 'vege'])
+>>> d.values()
+dict_values(['mango', 'carrot'])
+>>> d.items()
+dict_items([('fruit', 'mango'), ('vege', 'carrot')])
+>>> 
+======================================= RESTART: Shell =======================================
+>>> t=(1,2,3)
+>>> len(t)
+3
+>>> t=('key',34)
+>>> t[0]
+'key'
+>>> t.index('key')
+0
+>>> t.count('34')
+0
+>>> t.count(34)
+1
+>>> 

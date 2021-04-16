@@ -1,0 +1,39 @@
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:59:51) [MSC v.1914 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> #files
+>>> myfile=open('C:/Python/x.txt')
+>>> Myfile.close()
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    Myfile.close()
+NameError: name 'Myfile' is not defined
+>>> myfile.close()
+>>> myfile.open('C:/Python/x.txt')
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    myfile.open('C:/Python/x.txt')
+AttributeError: '_io.TextIOWrapper' object has no attribute 'open'
+>>> myfile=open('C:/Python/x.txt')
+>>> myfile.readlines()
+[]
+>>> myfile.close()
+>>> myfile=open('C:/Python/x.txt')
+>>> myfile.read()
+''
+>>> myfile=open('C:/Python/x.txt','w')
+>>> myfile.write('this is a new lines')
+19
+>>> myfile.close()
+>>> myfile=open('C:/Python/x.txt','w+')
+>>> myfile.write('this is a new lines')
+19
+>>> myfile.read()
+''
+>>> myfile.readline()
+''
+>>> myfile.readlines()
+[]
+>>> myfile.seek(0)
+0
+>>> myfile.close()
+>>> 
