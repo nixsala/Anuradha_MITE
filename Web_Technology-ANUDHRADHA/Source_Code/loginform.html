@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_form</title>
+</head>
+
+<body>
+    <h1>Log In</h1>
+    <form action="/search">
+        <label for="Username"> Username</label>
+        <input type="text" id="username" placeholder="Username" name="username" required>
+        <label for="password"> Password</label>
+        <input type="password" id="password" placeholder="Password" name="password" required>
+        <button>Submit</button><br><br>
+        <label for="Username"> Email</label>
+        <input type="email" id="email" name="email" required><br>
+        <p>Do you prefer dogs or cats?</p><br>
+
+       
+        <input type="radio" id="Dogs" name="Dogs" value="Dogs">
+        <label for="Dogs">Dogs</label>
+
+        <input type="radio" id="Cats" name="Cats" value="Cats">
+        <label for="Cats">Cats</label>
+
+        <input type="radio" id="Both" name="Both" value="Both">
+        <label for="Both">Both</label>
+
+        <input type="radio" id="None" name="None" value="None">
+        <label for="None">None</label><br>
+
+        <p>what is your favourite color</p><br>
+
+        <label for="colours">Choose a colours:</label>
+
+        <select name="colours" id="colours">
+            <option value="Red">Red</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Black">Black</option>
+        </select>
+
+        <p>Share your favourite quote!</p><br>
+
+
+
+
+        <textarea id="quote" name="quote" rows="4" cols="50">
+i belive i can fly
+</textarea>
+
+    </form>
+
+</body>
+
+</html>
